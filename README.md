@@ -39,21 +39,22 @@ As escolhas tecnológicas para este projeto foram pensadas não apenas para a fu
 ### 💻 Tecnologias Utilizadas
 
 *   **Backend:**
-    *   ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white) **Java 17:** A escolha de uma versão LTS (Long Term Support) garante estabilidade e acesso às últimas funcionalidades da linguagem, preparando o terreno para aplicações de nível empresarial.
-    *   ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) **Spring Boot:** O framework líder para desenvolvimento Java, conhecido por sua produtividade e convenções. Sua modularidade e ecossistema (Spring Data, Spring Web) são ideais para construir APIs RESTful e aplicações web robustas, facilitando a transição para microserviços e arquiteturas mais complexas no futuro.
-    *   ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) **Spring Data JPA:** Simplifica a interação com bancos de dados relacionais, abstraindo a complexidade do JDBC e ORM. Essencial para um desenvolvimento ágil e manutenção facilitada.
-    *   ![Spring Web](https://img.shields.io/badge/Spring_Web-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) **Spring Web:** A base para construir a camada de controladores e endpoints REST, permitindo uma comunicação eficiente entre o frontend e o backend.
-    *   ![H2 Database](https://img.shields.io/badge/H2_Database-4479A1?style=for-the-badge&logo=h2&logoColor=white) **H2 Database:** Um banco de dados em memória leve e rápido, perfeito para desenvolvimento e testes. Sua facilidade de uso acelera o ciclo de feedback e permite focar na lógica da aplicação.
-    *   ![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white) **Apache Maven:** Gerenciador de dependências e ferramenta de build padrão para projetos Java, garantindo consistência e reprodutibilidade do ambiente de desenvolvimento.
-
+    *   ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+    *   ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) 
+    *   ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+    *   ![Spring Web](https://img.shields.io/badge/Spring_Web-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) 
+    *   ![H2 Database](https://img.shields.io/badge/H2_Database-4479A1?style=for-the-badge&logo=h2&logoColor=white) 
+    *   ![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white) 
 *   **Frontend:**
-    *   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) **HTML5:** A espinha dorsal da web, utilizada para estruturar o conteúdo da aplicação.
-    *   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) **CSS3:** Para estilização e design responsivo, garantindo uma experiência agradável em diferentes dispositivos.
-    *   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) **JavaScript:** Adiciona interatividade e dinamismo à interface, permitindo requisições assíncronas (AJAX) para uma experiência de usuário fluida.
-    *   ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white) **Thymeleaf:** Um motor de template moderno e seguro para aplicações web Java, que facilita a integração do backend com o frontend de forma elegante e eficiente.
-    *   ![Bootstrap 5](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white) **Bootstrap 5:** Framework CSS popular que agiliza o desenvolvimento de interfaces responsivas e visualmente atraentes.
-    *   ![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white) **Font Awesome:** Biblioteca de ícones que enriquece a usabilidade e o apelo visual da aplicação.
+    *   ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
+    *   ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+    *   ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) 
+    *   ![Thymeleaf](https://img.shields.io/badge/Thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white) 
+    *   ![Bootstrap 5](https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white) 
+    *   ![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white)
 
+---
+ 
 ### 📈 Escalabilidade e Futuro
 
 A escolha do Spring Boot e a arquitetura RESTful abrem portas para futuras expansões:
