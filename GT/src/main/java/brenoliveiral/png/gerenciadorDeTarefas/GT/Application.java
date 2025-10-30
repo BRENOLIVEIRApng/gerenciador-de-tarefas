@@ -1,13 +1,13 @@
-package brenoliveiral.png.gerennciadorDeTarefas.GT;
+package brenoliveiral.png.gerenciadorDeTarefas.GT;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GtApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(GtApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }

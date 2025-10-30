@@ -1,10 +1,10 @@
-package brenoliveiral.png.gerennciadorDeTarefas.GT;
+package brenoliveiral.png.gerenciadorDeTarefas.GT;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GtApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {
