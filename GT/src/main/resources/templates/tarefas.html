@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<div th:fragment="content">
+    <div class="container">
+        <!-- Estatísticas -->
+        <div class="estatisticas fade-in">
+            <div class="estatistica-card">
+                <div class="estatistica-valor text-primary" id="total-tarefas">0</div>
+                <div class="estatistica-label">Total de Tarefas</div>
+            </div>
+            <div class="estatistica-card">
+                <div class="estatistica-valor text-success" id="concluidas-tarefas">0</div>
+                <div class="estatistica-label">Concluídas</div>
+            </div>
+            <div class="estatistica-card">
+                <div class="estatistica-valor text-warning" id="pendentes-tarefas">0</div>
+                <div class="estatistica-label">Pendentes</div>
+            </div>
+        </div>
+
+        <!-- Filtros Modernos -->
+        <div class="filtros-modernos fade-in">
+            <div class="filtros-header">
+                <h6 class="filtros-titulo">
+                    <i class="fas fa-filter me-2"></i>Filtrar Tarefas
+                </h6>
+                <span class="filtros-contador" id="contador-filtrado">Mostrando todas as tarefas</span>
+            </div>
+            <div class="filtros-botoes">
+                <button class="filtro-moderno active" data-filtro="todas">
+                    <div class="filtro-icone">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <div class="filtro-conteudo">
+                        <span class="filtro-label">Todas</span>
+                        <span class="filtro-badge" id="badge-todas">0</span>
+                    </div>
+                </button>
+                <button class="filtro-moderno" data-filtro="pendentes">
+                    <div class="filtro-icone pendente">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="filtro-conteudo">
+                        <span class="filtro-label">Pendentes</span>
+                        <span class="filtro-badge pendente" id="badge-pendentes">0</span>
+                    </div>
+                </button>
+                <button class="filtro-moderno" data-filtro="concluidas">
+                    <div class="filtro-icone concluida">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="filtro-conteudo">
+                        <span class="filtro-label">Concluídas</span>
+                        <span class="filtro-badge concluida" id="badge-concluidas">0</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Formulário de nova tarefa -->
+        <div class="card mb-4 fade-in">
+            <div class="card-header bg-primary text-white">
+                <i class="fas fa-plus-circle me-2"></i>Nova Tarefa
+            </div>
+            <div class="card-body">
+                <form id="form-tarefa" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="titulo" class="form-label">Título *</label>
+                        <input type="text" class="form-control" id="titulo" required
+                               placeholder="Digite o título da tarefa">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="prioridade" class="form-label">Prioridade</label>
+                        <select class="form-select" id="prioridade">
+                            <option value="BAIXA">Baixa</option>
+                            <option value="MEDIA" selected>Média</option>
+                            <option value="ALTA">Alta</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="descricao" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricao" rows="3"
+                                  placeholder="Digite uma descrição opcional"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus me-2"></i>Adicionar Tarefa
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Lista de tarefas -->
+        <div id="lista-tarefas" class="lista-tarefas">
+            <div class="text-center py-5 text-muted">
+                <i class="fas fa-tasks fa-3x mb-3 opacity-50"></i>
+                <p>Nenhuma tarefa encontrada. Adicione sua primeira tarefa!</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
