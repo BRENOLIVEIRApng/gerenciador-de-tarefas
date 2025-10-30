@@ -1,0 +1,202 @@
+/* Filtros Modernos */
+.filtros-modernos {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.filtros-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.filtros-titulo {
+    color: #1f2937;
+    font-weight: 600;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.filtros-contador {
+    color: #6b7280;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.filtros-botoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.filtro-moderno {
+    background: linear-gradient(145deg, #ffffff, #f9fafb);
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.filtro-moderno::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), #2563eb);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.filtro-moderno:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+    border-color: var(--primary-color);
+}
+
+.filtro-moderno:hover::before {
+    transform: scaleX(1);
+}
+
+.filtro-moderno.active {
+    background: linear-gradient(145deg, var(--primary-color), #2563eb);
+    color: rgba(106, 127, 245, 0.719);
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
+}
+
+.filtro-moderno.active::before {
+    transform: scaleX(1);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+}
+
+.filtro-icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.125rem;
+    background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+    color: #6b7280;
+    transition: all 0.3s ease;
+}
+
+.filtro-icone.pendente {
+    background: linear-gradient(145deg, #ffd739, #fbbf24);
+    color: #92400e;
+}
+
+.filtro-icone.concluida {
+    background: linear-gradient(145deg, #2fff93, #10b981);
+    color: #065f46;
+}
+
+.filtro-moderno.active .filtro-icone {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.filtro-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    flex: 1;
+}
+
+.filtro-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: inherit;
+}
+
+.filtro-badge {
+    background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+    color: #4b5563;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: inline-block;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.filtro-badge.pendente {
+    background: linear-gradient(145deg, #fef3c7, #fbbf24);
+    color: #92400e;
+}
+
+.filtro-badge.concluida {
+    background: linear-gradient(145deg, #d1fae5, #10b981);
+    color: #065f46;
+}
+
+.filtro-moderno.active .filtro-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: rgba(105, 105, 105, 0.67);
+}
+
+/* Animação de entrada */
+.filtros-modernos {
+    animation: slideInDown 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .filtros-botoes {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .filtros-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .filtro-moderno {
+        padding: 0.875rem;
+    }
+}
+
+/* Animação de pulso para badges quando atualizadas */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.filtro-badge.updated {
+    animation: pulse 0.5s ease-in-out;
+}

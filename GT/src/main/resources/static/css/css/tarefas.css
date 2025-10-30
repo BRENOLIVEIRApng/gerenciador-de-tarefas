@@ -1,0 +1,110 @@
+/* Estilos específicos para a página de listagem de tarefas */
+.lista-tarefas {
+    gap: 1rem;
+}
+
+.tarefa-item {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #64748b;
+}
+
+.tarefa-item.concluida {
+    border-left-color: #10b981;
+    opacity: 0.8;
+}
+
+.tarefa-item-conteudo {
+    flex: 1;
+}
+
+.tarefa-item-acoes {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.tarefa-titulo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+}
+
+.tarefa-descricao {
+    color: #6b7280;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.tarefa-metadata {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.tarefa-prioridade {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+/* Filtros */
+.filtros-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtro-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtro-btn.active,
+.filtro-btn:hover {
+    background: var(--primary-color);
+    color: rgb(179, 179, 179);
+    border-color: var(--primary-color);
+}
+
+/* Estatísticas */
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.estatistica-card {
+    background: whitesmoke;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estatistica-valor {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.estatistica-label {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
