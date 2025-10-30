@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 @Entity
 public class Tarefa {
 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
