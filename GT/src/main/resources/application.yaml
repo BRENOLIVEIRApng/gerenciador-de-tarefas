@@ -2,6 +2,11 @@ spring:
   application:
     name: GT
 
+  security:
+    user:
+      name: breno
+      password: 159753
+
   datasource:
     url: jdbc:h2:mem:GTDB
     driver-class-name: org.h2.Driver
